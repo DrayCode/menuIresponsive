@@ -1,0 +1,135 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    
+}
+
+header{
+    
+    
+position: fixed;
+    
+width: 100%;
+
+background: #f0f0f0;
+    
+height: 70px;    
+    
+    
+}
+
+.menu{
+    
+    margin-top:-45px;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin-right: 100px;
+    
+}
+
+
+.menu a{
+    
+    display: flex;
+    background-color:cornflowerblue;
+    justify-content: flex-end;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+.menu a:hover{
+    
+    background-color: dodgerblue;
+    border-top: 3px solid;
+
+}
+.tmenu{
+    
+    display: none;
+    
+}
+
+#btn-menu{
+    
+    display: none;
+    
+}
+
+.logo{
+    
+    border: solid 3px crimson;
+    width: 40px;
+    font-size: 30px;
+    margin: 10px;
+    
+}
+
+.titulo{
+    
+    font-size: 50px;
+    border-bottom: 5px solid crimson;
+    width: 578px;
+    margin-bottom: 30px;
+    
+}
+
+.contenedor{
+    
+    padding: 10px 100px;
+    font-size: 20px;
+    
+}
+
+@media (max-width:768px){
+    
+    .menu{
+        margin-top:1px;
+        flex-direction: column;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    
+    .menu a{
+        
+       display: block; 
+        
+    }
+    
+    .tmenu{
+        
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        margin: 5px;
+        
+    }
+    
+    .logo{
+        display: none;
+    }
+    .btn-menu .menu{
+        
+        margin-left: 0;
+        
+    }
+   
+    .titulo{
+        
+        width: 300px;
+        
+    }
+    
+    .menu a:hover{
+        
+        border: none;
+        
+        
+        
+    }
+}
